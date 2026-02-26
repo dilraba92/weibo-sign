@@ -1,8 +1,9 @@
 certifi
-charset-normalizer==3.4.2
+charset-normalizer
 colorama==0.4.6
 idna==3.10
 requests==2.32.4
 tqdm==4.67.1
 urllib3==2.5.0
+
 
