@@ -155,7 +155,8 @@ class WeiboSuperTopicSigner:
                     # 从oid中提取容器ID
                     oid_parts = topic_list.get('oid', '').split(':')
                     containerid = oid_parts[-1] if len(oid_parts) > 1 else None
-                    
+
+                    # 提取一些超话的内容，可以根据需要进行修改
                     if containerid:
                         page_topics.append({
                             'title': topic_list.get('title', ''),
@@ -509,4 +510,5 @@ def main():
 if __name__ == "__main__":
 
     main()
+
 
