@@ -496,7 +496,7 @@ def main():
             if signer.run_for_account(update_topics=args.update_topics):
                 success_accounts += 1
         
-        # 账号间延迟
+        # 账号间延迟，可以根据需要修改
         if idx < total_accounts:
             delay = random.uniform(60, 90)
             logger.info(f"\n等待 {delay:.1f}秒后处理下一个账号...")
@@ -510,5 +510,6 @@ def main():
 if __name__ == "__main__":
 
     main()
+
 
 
