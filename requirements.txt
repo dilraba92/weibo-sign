@@ -2,9 +2,10 @@ certifi
 charset-normalizer
 colorama
 idna
-requests==2.32.4
+requests
 tqdm==4.67.1
 urllib3==2.5.0
+
 
 
 
