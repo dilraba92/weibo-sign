@@ -232,7 +232,7 @@ class WeiboSuperTopicSigner:
         }
         
         try:
-            # 随机延迟避免请求过快
+            # 随机延迟避免请求过快(这里的时间可以自己调整)
             delay = random.uniform(15, 35)
             self.logger.debug(f"[{self.account_name}] 签到 {topic['title']} 前等待 {delay:.1f}秒...")
             time.sleep(delay)
@@ -509,3 +509,4 @@ def main():
 if __name__ == "__main__":
 
     main()
+
