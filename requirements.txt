@@ -5,10 +5,3 @@ idna
 requests
 tqdm
 urllib3
-
-
-
-
-
-
-
