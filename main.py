@@ -17,7 +17,7 @@ TOPICS_FILE_PREFIX = os.path.join(directory_path,'supertopics_')    # 每个账�
 RESULTS_DIR = os.path.join(directory_path,'results')                # 结果保存目录
 LOGS_DIR = os.path.join(directory_path,'logs')                      # 日志保存目录
 
-# 请求头
+# 请求头，根据需要修改
 HEADERS = {
     'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36 Edg/137.0.0.0 115Browser/35.3.0.2',
     'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7',
@@ -36,7 +36,8 @@ class WeiboSuperTopicSigner:
         self.topics_file = f"{TOPICS_FILE_PREFIX}{self.account_name}.json"
         self.logger = logger or logging.getLogger(__name__)
         self.sign_results = []  # 存储签到结果
-    
+
+    # 读取账号
     def load_cookies(self, cookies_dict):
         """加载cookies字典"""
         try:
@@ -506,4 +507,5 @@ def main():
     logger.info("=" * 60)
 
 if __name__ == "__main__":
+
     main()
